@@ -1,0 +1,161 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and typography */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  padding: 20px;
+  line-height: 1.5;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #111;
+  font-weight: 700;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #333;
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+nav a {
+  color: #eee;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #007acc;
+  color: white;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Section headings */
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  color: #222;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 6px;
+}
+
+/* Degree type spans */
+.degree-type {
+  font-weight: 700;
+  color: #004a99;
+}
+
+/* Expected year spans */
+.expected-year {
+  font-style: italic;
+  color: #666;
+  margin-left: 6px;
+}
+
+/* Date range spans */
+.date-range {
+  font-size: 0.9rem;
+  color: #999;
+  margin-left: 8px;
+}
+
+/* Dissertation title emphasized */
+.dissertation-title {
+  font-style: italic;
+  color: #555;
+  display: block;
+  margin-top: 6px;
+  max-width: 600px;
+  line-height: 1.4;
+}
+
+/* Lists inside section */
+section ul {
+  margin-top: 8px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* Minor and honors list items - distinct style */
+.minor {
+  font-weight: 600;
+  color: #0055cc;
+}
+
+.honors {
+  font-style: italic;
+  color: #aa7700;
+}
+
+/* Thesis title list item */
+.thesis-title em {
+  color: #444;
+  font-weight: 600;
+}
+
+/* Responsive adjustments */
+
+/* Small screens (phones, <600px) */
+@media (max-width: 599px) {
+  body {
+    padding: 10px;
+    font-size: 14px;
+  }
+  nav a {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+  nav {
+    gap: 5px;
+  }
+  section h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Medium screens (600-959px) */
+@media (min-width: 600px) and (max-width: 959px) {
+  body {
+    font-size: 15px;
+  }
+  nav a {
+    flex: 1 1 45%;
+  }
+}
+
+/* Large screens (960px and up) */
+@media (min-width: 960px) {
+  body {
+    font-size: 16px;
+  }
+  nav a {
+    flex: 0 0 auto;
+  }
+}

@@ -1,0 +1,152 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and typography */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  background-color: #f9f9f9;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #111;
+  font-weight: 700;
+}
+
+/* Navigation */
+nav {
+  background-color: #333;
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+nav a {
+  color: #eee;
+  text-decoration: none;
+  padding: 8px 15px;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #007acc;
+  color: white;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Section heading */
+section h2 {
+  font-size: 1.8rem;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 8px;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+/* Professional entry article */
+article.professional-entry {
+  background-color: white;
+  padding: 15px 20px;
+  margin-bottom: 25px;
+  border-radius: 6px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+  border-left: 5px solid #007acc;
+}
+
+/* Organization heading */
+.organization {
+  font-weight: 700;
+  color: #004a99;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+/* Role and date range */
+.role {
+  font-weight: 600;
+  color: #0055cc;
+  margin-right: 20px;
+}
+
+.date-range {
+  font-style: italic;
+  color: #666;
+}
+
+/* Responsibilities list */
+.responsibilities {
+  list-style: disc;
+  margin-left: 25px;
+  margin-top: 10px;
+  color: #444;
+}
+
+.responsibilities li {
+  margin-bottom: 7px;
+}
+
+/* Responsive styling */
+
+/* Small screens (<600px) */
+@media (max-width: 599px) {
+  body {
+    padding: 10px;
+    font-size: 14px;
+  }
+  nav a {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+  nav {
+    gap: 5px;
+  }
+  section h2 {
+    font-size: 1.5rem;
+  }
+  .organization {
+    font-size: 1.2rem;
+  }
+}
+
+/* Medium screens (600-959px) */
+@media (min-width: 600px) and (max-width: 959px) {
+  body {
+    font-size: 15px;
+  }
+  nav a {
+    flex: 1 1 45%;
+  }
+}
+
+/* Large screens (960px and above) */
+@media (min-width: 960px) {
+  body {
+    font-size: 16px;
+  }
+  nav a {
+    flex: 0 0 auto;
+  }
+}

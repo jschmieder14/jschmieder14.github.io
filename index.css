@@ -7,90 +7,139 @@
 
 /* Base body styles */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
   line-height: 1.6;
-  color: #333;
   background-color: #f9f9f9;
+  color: #222;
   padding: 20px;
 }
 
-/* Container to center content and limit width */
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* Headings */
-h1, h2, h3, h4 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #222;
-  margin-bottom: 0.5em;
-}
-
-h1 {
-  font-size: 2.5rem;
-}
-
-h2 {
-  font-size: 2rem;
-  margin-top: 1.5em;
-}
-
-h3 {
-  font-size: 1.5rem;
-  margin-top: 1em;
-}
-
-/* Paragraphs */
-p {
-  margin-bottom: 1em;
-}
-
-/* Links */
-a {
-  color: #0066cc;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Navigation menu */
+/* Navigation styles */
 nav {
-  background-color: #03e647;
-  padding: 10px 0;
+  background-color: #333;
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  border-radius: 8px;
   margin-bottom: 20px;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-}
-
 nav a {
-  font-weight: bold;
+  color: #eee;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Responsive images */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 10px 0;
+nav a:hover,
+nav a:focus {
+  background-color: #0066cc;
+  color: white;
+  outline: none;
+  cursor: pointer;
 }
 
-/* Footer */
-footer {
-  margin-top: 40px;
+/* The h1 in nav styled */
+nav h1 {
+  flex-basis: 100%;
+  color: #eee;
+  font-size: 2rem;
   text-align: center;
-  font-size: 0.9rem;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+/* Title (h2) styles */
+.title {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.5rem;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+/* Institution, college, address and email paragraphs */
+.institution,
+.college,
+.address,
+.email {
+  text-align: center;
+  font-size: 1rem;
   color: #666;
-  border-top: 1px solid #ddd;
-  padding-top: 10px;
-  background-color: #f1f1f1;
+  margin-bottom: 4px;
+}
+
+/* email link style with hover */
+.email a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.email a:hover,
+.email a:focus {
+  color: #004a99;
+  text-decoration: underline;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Responsive layout adjustments */
+
+/* Small devices (phones, less than 600px) */
+@media (max-width: 599px) {
+  nav {
+    justify-content: center;
+  }
+  nav a {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+  nav h1 {
+    font-size: 1.8rem;
+  }
+  body {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+/* Medium devices (tablets 600px to 959px) */
+@media (min-width: 600px) and (max-width: 959px) {
+  nav a {
+    flex: 1 1 45%;
+  }
+  body {
+    font-size: 15px;
+  }
+}
+
+/* Large devices (desktops 960px and up) */
+@media (min-width: 960px) {
+  nav a {
+    flex: 0 0 auto;
+  }
+  body {
+    max-width: 960px;
+    margin: 0 auto;
+  }
 }

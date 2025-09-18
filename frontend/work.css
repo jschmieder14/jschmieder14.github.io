@@ -1,0 +1,179 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base body styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  color: #222;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #111;
+}
+
+/* Navigation styles */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  background-color: #333;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+nav a {
+  color: #eee;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #007acc;
+  color: white;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Section heading */
+section h2 {
+  font-size: 1.8rem;
+  color: #222;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 8px;
+  margin-bottom: 25px;
+}
+
+/* Individual work entries */
+article.work-entry {
+  background: #fff;
+  padding: 15px 20px;
+  border-left: 5px solid #007acc;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+  border-radius: 6px;
+  margin-bottom: 25px;
+}
+
+/* Employer heading */
+.employer {
+  color: #004a99;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+/* Role and date range */
+.role {
+  font-weight: 600;
+  color: #0055cc;
+  margin-right: 15px;
+}
+
+.date-range {
+  font-style: italic;
+  color: #666;
+}
+
+/* Location paragraph */
+.location {
+  margin-top: 4px;
+  color: #555;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+/* Responsibilities list */
+.responsibilities {
+  list-style-type: disc;
+  margin-left: 25px;
+  color: #444;
+}
+
+.responsibilities li {
+  margin-bottom: 7px;
+}
+
+/* Grant entry */
+.grant-entry {
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: #e8f0fe;
+  border-left: 4px solid #4285f4;
+  border-radius: 4px;
+}
+
+.grant-entry h4 {
+  margin-bottom: 6px;
+  font-weight: 700;
+  color: #3367d6;
+}
+
+.grant-entry .organization {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive adaptations */
+
+/* Small screens (<600px) */
+@media (max-width: 599px) {
+  body {
+    font-size: 14px;
+    padding: 10px;
+  }
+  nav a {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+  nav {
+    gap: 5px;
+  }
+  section h2 {
+    font-size: 1.5rem;
+  }
+  .employer {
+    font-size: 1.2rem;
+  }
+}
+
+/* Medium screens (600-959px) */
+@media (min-width: 600px) and (max-width: 959px) {
+  body {
+    font-size: 15px;
+  }
+  nav a {
+    flex: 1 1 45%;
+  }
+}
+
+/* Large (960px+) */
+@media (min-width: 960px) {
+  body {
+    font-size: 16px;
+  }
+  nav a {
+    flex: 0 0 auto;
+  }
+}
