@@ -103,6 +103,123 @@ header h1 {
   outline: none;
 }
 
+/* Hide nav menu by default for mobile/compact view */
+.hidden {
+  display: none;
+}
+
+/* Show menu when toggled */
+.open {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Style the nav toggle and dark mode buttons to match nav */
+#nav-toggle,
+#dark-mode-btn {
+  background-color: #444;
+  color: #eee;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-weight: 600;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#nav-toggle:hover,
+#dark-mode-btn:hover,
+#nav-toggle:focus,
+#dark-mode-btn:focus {
+  background-color: #0066cc;
+  color: white;
+  outline: none;
+}
+
+/* Dark mode styling */
+.dark-mode {
+  background-color: #222;
+  color: #eee;
+}
+
+.dark-mode nav {
+  background-color: #222;
+}
+
+.dark-mode nav a {
+  color: #eee;
+}
+
+.dark-mode header h1,
+.dark-mode .title,
+.dark-mode .institution,
+.dark-mode .college,
+.dark-mode .address,
+.dark-mode .email {
+  color: #eee;
+}
+
+/* Contact form styles */
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin: 30px auto;
+  max-width: 400px;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #fafafa;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.dark-mode #contact-form {
+  background-color: #333;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+}
+
+.dark-mode #contact-form input,
+.dark-mode #contact-form textarea {
+  background-color: #292929;
+  color: #eee;
+  border: 1px solid #555;
+}
+
+#contact-form button {
+  background: #0066cc;
+  color: white;
+  font-weight: 600;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#contact-form button:hover,
+#contact-form button:focus {
+  background: #0056a3;
+}
+
+#form-feedback {
+  font-size: 1rem;
+  margin-top: 6px;
+  text-align: center;
+}
+
+
 /* Responsive layout adjustments */
 
 /* Small devices (phones, less than 600px) */
