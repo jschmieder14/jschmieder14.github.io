@@ -4,12 +4,14 @@ const navMenu = document.getElementById('nav-menu');
 navToggle.addEventListener('click', () => {
   navMenu.classList.toggle('open');
   navMenu.classList.toggle('hidden');
+  console.log('Menu Toggled')
 });
 
 // Dark mode switch
 const darkModeBtn = document.getElementById('dark-mode-btn');
 darkModeBtn.addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
+  console.log('Dark mode toggled')
 });
 
 // Dynamic footer year
