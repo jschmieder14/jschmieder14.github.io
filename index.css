@@ -90,14 +90,14 @@ header h1 {
 /* email link style with hover */
 .email a {
   color: #0066cc;
-  text-decoration: none;
+  text-decoration: underline;
   font-weight: 600;
   transition: color 0.3s ease;
 }
 
 .email a:hover,
 .email a:focus {
-  color: #004a99;
+  color: #470099;
   text-decoration: underline;
   cursor: pointer;
   outline: none;
