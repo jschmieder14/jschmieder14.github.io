@@ -110,9 +110,13 @@ header h1 {
 
 /* Show menu when toggled */
 .open {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(7, auto); /* 14 items: 7 per row */
+  grid-template-rows: repeat(2, auto);    /* 2 rows */
   gap: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 /* Style the nav toggle and dark mode buttons to match nav */
